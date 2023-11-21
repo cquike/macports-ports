@@ -1,0 +1,30 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           python 1.0
+PortGroup           github 1.0
+
+github.setup        msiemens tinydb 4.7.1 v
+
+name                py-tinydb
+version             4.7.1
+revision            0
+categories-append   devel
+license             MIT
+supported_archs     noarch
+platforms           {darwin any}
+
+maintainers         nomaintainer
+
+description         TinyDB is a tiny, document oriented database
+
+long_description    TinyDB is a lightweight document oriented database \
+                    optimized for your happiness :).
+
+checksums           rmd160  d4a195a8dd44c1dfb0ebd09f4f05c0582d0ebc3b \
+                    sha256  c41521f51025e38c42199837d45063d4d50e1f0a2f5610aceb24b554eeb50aac \
+                    size    87799
+
+python.versions     38 39 310 311
+python.pep517       yes
+python.pep517_backend poetry
